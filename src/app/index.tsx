@@ -1,7 +1,12 @@
-import React from 'react'
+import React from "react";
+import { Button } from "shared/ui/Button";
 
 const App = () => {
-return <div>lol</div>
-}
+  return (
+    <div>
+      <Button label="Click me bro" size="small"></Button>
+    </div>
+  );
+};
 
-export default App
+export default App;
