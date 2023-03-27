@@ -1,5 +1,6 @@
 import { lazy } from "react";
-import { Route, Routes } from "react-router-dom";
+
+import { Navigate, Route, Routes } from "react-router-dom";
 
 const BooksAllPage = lazy(() => import("./books-all"));
 const BooksProfilePage = lazy(() => import("./books-profile"));
@@ -9,8 +10,9 @@ const Routing = () => {
     <Routes>
       <Route path="/" element={<BooksAllPage />} />
       <Route path="/book/:id" element={<BooksProfilePage />} />
+      <Route path="*" element={<Navigate to="/" />} />
     </Routes>
   );
 };
 
-export const routes = <Routing></Routing>;
+export const routes = <Routing />;

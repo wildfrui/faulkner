@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const BooksAll = () => {
-  return (
-    <div>All books available</div>
-  )
-}
+  return <div>All books</div>;
+};
 
-export default BooksAll
+export default BooksAll;
