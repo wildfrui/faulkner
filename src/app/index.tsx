@@ -1,12 +1,11 @@
 import React from "react";
 import { Button } from "shared/ui/Button";
+import { withProviders } from "./providers";
+import { routes } from "pages";
+import "./styles/index.scss";
 
 const App = () => {
-  return (
-    <div>
-      <Button label="Click me bro" size="small"></Button>
-    </div>
-  );
+  return <div>{routes}</div>;
 };
 
-export default App;
+export default withProviders(App);
